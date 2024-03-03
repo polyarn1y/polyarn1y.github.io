@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Форма</title>
+<style>
+</style>
+</head>
+<body>
+<form action="#">
+    <table>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" id="email" placeholder="Введите e-mail" required></td>
+        </tr>
+        <tr>
+            <td>Пароль</td>
+            <td><input type="text" id="password" placeholder="Введите пароль" required></td>
+        </tr>
+        <tr>
+            <td>Пол</td>
+            <td>
+                <label for="male"><input type="radio" name="gender" id="male">Мужчина</label>
+                <label for="female"><input type="radio" name="gender" id="female">Женщина</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Год рождения</td>
+            <td>
+                <input type="number" min="1900" max="2024">-й
+            </td>
+        </tr>
+        <tr>
+            <td>Я знаю</td>
+            <td>
+                <label for="russian"><input type="checkbox" id="russian" checked disabled>Русский</label><br>
+                <label for="spanish"><input type="checkbox" id="spanish">Испанский</label><br>
+                <label for="deutsch"><input type="checkbox" id="deutsch">Немецкий</label><br>
+                <label for="english"><input type="checkbox" id="english">Английский</label><br>
+                <label for="chinese"><input type="checkbox" id="chinese">Китайский</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Обо мне</td>
+            <td>
+                <textarea placeholder="Напишите коротко о себе" rows="10" cols="30"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
