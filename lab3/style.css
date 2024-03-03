@@ -1,0 +1,32 @@
+body {
+    background-color: black;	
+    color: white;
+    background-image: url('bg.png');
+}
+h1, h2 {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+em {
+    color: green;
+    border-bottom: 2px solid black;
+    padding: 1px;
+
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+strong {
+    font-family: 'Caveat', cursive;
+}
