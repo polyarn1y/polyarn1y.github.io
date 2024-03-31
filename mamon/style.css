@@ -18,8 +18,22 @@ a {
     position: relative;
 }
 
-/* Header */
+.services, .clients, .team {
+    border-top: #C2C2C2 1px solid;
+}
 
+.services h2, .clients h2, .team h2 {
+    color: #C2C2C2;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 0 20px;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+/* Header */
 .header {
     margin-top: 53px;
     margin-bottom: 124px;
@@ -68,7 +82,6 @@ a {
 }
 
 /* Banner */
-
 .banner {
     margin-bottom: 100px;
 }
@@ -98,17 +111,105 @@ a {
 }
 
 /* Services */
-.services {
-    border-top: #C2C2C2 1px solid;
+.services-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 50% 50%;
+    grid-row-gap: 38px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.services h2 {
-    color: #C2C2C2;
+.service-item span {
+    font-size: 28px;
+    color: #000;
+}
+
+.service-item p {
     font-size: 14px;
-    font-weight: 300;
-    background-color: #fff;
-    padding: 0 20px;
-    position: absolute;
-    top: -10px;
-    left: -20px;
+    color: #B2B2B2;
+    line-height: 1.5;
+}
+
+.service-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-img {
+    flex-basis: 165px;
+    text-align: center;
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-basis: calc(80% - 165px);
+}
+
+/* Clients */
+.clients-grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    text-align: center;
+    grid-row-gap: 44px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* Team */
+.team-grid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-row-gap: 51px;
+}
+
+.worker {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+
+.worker-img img {
+    border-radius: 50%;
+}
+
+.worker-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: calc(80% - 165px);
+}
+
+.worker span {
+    font-size: 28px;
+    color: #000;
+    font-weight: 700;
+}
+
+.worker p {
+    font-size: 14px;
+    color: #B2B2B2;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #F7F7F7;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 40px;
 }
