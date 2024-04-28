@@ -21,11 +21,10 @@ switch (num) {
     case 4:
         alert("На ветке сидит " + num + " вороны");
         break;
+    case 5:
+        alert("На ветке сидит 5 ворон");
+        break;
     default:
-        if (num >= 5) {
-            alert("На ветке сидит " + num + " ворон");
-        } else {
-            alert("Введите корректное значение");
-        }
+        alert("Введите корректное значение");
         break;
 }
