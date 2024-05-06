@@ -9,10 +9,11 @@ const hundredsRemainder = num % 100;
 if (num <= 0) {
     str = "Введите корректное значение";
 }
+if (num === 1) {
+    str = "На ветке сидит" + num + "ворона";
+}
 
 switch (true) {
-    case 1:
-        str = "На ветке сидит" + num + "ворона";
     case remainder === 1 && hundredsRemainder!== 11:
         str = "На ветке сидит " + num + "ворон";
         break;
