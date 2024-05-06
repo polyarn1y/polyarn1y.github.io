@@ -11,6 +11,8 @@ if (num <= 0) {
 }
 
 switch (true) {
+    case 1:
+        str = "На ветке сидит" + num + "ворона";
     case remainder === 1 && hundredsRemainder!== 11:
         str = "На ветке сидит " + num + "ворон";
         break;
