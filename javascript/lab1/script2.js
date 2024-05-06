@@ -1,30 +1,27 @@
 'use strict';
 
 let num = parseInt(prompt("Введите число:"))
+let str = '';
 
-if (num === 1) {
-    alert("На ветке сидит 1 ворона");
-} else if (num >= 2 && num <= 4) {
-    alert("На ветке сидит " + num + " вороны");
-} else if (num >= 5) {
-    alert("На ветке сидит " + num + " ворон");
-} else {
-    alert("Введите корректное значение");
+if (num <= 0) {
+    str = "Введите корректное значение";
 }
 
 switch (num) {
     case 1:
-        alert("На ветке сидит 1 ворона");
+        str = "На ветке сидит " + num + " ворона";
         break;
     case 2:
     case 3:
     case 4:
-        alert("На ветке сидит " + num + " вороны");
+        str = "На ветке сидит " + num + " вороны";
         break;
     case 5:
-        alert("На ветке сидит 5 ворон");
+        str = "На ветке сидит " + num + " ворон";
         break;
     default:
-        alert("Введите корректное значение");
+        str = "На ветке сидит " + num + " вороны";
         break;
 }
+
+alert(str);
