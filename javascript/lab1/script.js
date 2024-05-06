@@ -11,7 +11,7 @@ if (age > 0 && age <= 17) {
     exit;
 }
 
-let gender = prompt("Введите свой пол ('М' или 'Ж'");
+let gender = prompt("Введите свой пол ('М' или 'Ж')");
 
 if (gender === "М") {
     if (age >= 18 && age <= 59) {
