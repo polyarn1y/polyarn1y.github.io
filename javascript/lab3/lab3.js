@@ -7,7 +7,7 @@ import { fib } from './lab2.js';
  * @return {string} Дробная часть числа
  */
 export function getDecimal(num) {
-    return (num - Math.floor(num)).toFixed(2);
+    return Number((num - Math.floor(num)).toFixed(2));
 }
 
 /**
