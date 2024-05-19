@@ -90,4 +90,22 @@ function fibs(n) {
     return result;
 }
 
-console.log(fibs(5)); // [0n, 1n, 1n, 2n, 3n]
+/**
+ * Возвращает новый массив, содержащий те же элементы, что и исходный массив, но отсортированные по убыванию.
+ * 
+ * @param {number[]} arr - Исходный массив чисел.
+ * @returns {number[]} Новый массив чисел, отсортированный по убыванию.
+ */
+function arrReverseSorted(arr) {
+    return [...arr].sort((a, b) => b - a);
+}
+
+/**
+ * Возвращает массив уникальных значений из исходного массива.
+ * 
+ * @param {Array} arr - Исходный массив.
+ * @returns {Array} Массив уникальных значений.
+ */
+function unique(arr) {
+    return [...new Set(arr)];
+}
