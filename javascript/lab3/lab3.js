@@ -6,7 +6,7 @@ import { fib } from './lab2.js';
  * @param {number} num - Число для извлечения дробной части
  * @return {string} Дробная часть числа
  */
-function getDecimal(num) {
+export function getDecimal(num) {
     return (num - Math.floor(num)).toFixed(2);
 }
 
@@ -16,7 +16,7 @@ function getDecimal(num) {
  * @param {string} url - URL для нормализации.
  * @returns {string} Нормализованный URL с протоколом https.
  */
-function normalizeUrl(url) {
+export function normalizeUrl(url) {
     if (url.startsWith('http://')) {
         return 'https://' + url.slice(7);
     }
@@ -34,7 +34,7 @@ function normalizeUrl(url) {
  * @param {string} str - Строка для проверки.
  * @returns {boolean} true, если строка содержит спам-сообщения, иначе false.
  */
-function checkSpam(str) {
+export function checkSpam(str) {
     return str.toLowerCase().includes('viagra') || str.toLowerCase().includes('xxx');
 }
 
@@ -45,7 +45,7 @@ function checkSpam(str) {
  * @param {number} maxlength - Максимально допустимая длина строки.
  * @returns {string} Усеченная строка с добавленным многоточием при необходимости.
  */
-function truncate(str, maxlength) {
+export function truncate(str, maxlength) {
     if (str.length > maxlength) {
         return str.slice(0, maxlength - 1) + '...';
     }
@@ -58,7 +58,7 @@ function truncate(str, maxlength) {
  * @param {string} str - Исходная строка.
  * @returns {string} Строка с первой заглавной буквой.
  */
-function ucFirst(str) {
+export function ucFirst(str) {
     if(!str) return str;
     return str[0].toUpperCase() + str.slice(1);
 }
@@ -69,7 +69,7 @@ function ucFirst(str) {
  * @param {string} str - Исходная строка с дефисами.
  * @returns {string} Строка в camelCase.
  */
-function camelize(str) {
+export function camelize(str) {
     return str
         .split('-')      
         .map((word, index) => index === 0 ? word : ucFirst(word)) 
@@ -82,7 +82,7 @@ function camelize(str) {
  * @param {number} n - Натуральное число n.
  * @returns {BigInt[]} Массив чисел Фибоначчи до n-го.
  */
-function fibs(n) {
+export function fibs(n) {
     let result = [];
     for (let i = 0; i < n; i++) {
         result.push(fib(i));
@@ -96,7 +96,7 @@ function fibs(n) {
  * @param {number[]} arr - Исходный массив чисел.
  * @returns {number[]} Новый массив чисел, отсортированный по убыванию.
  */
-function arrReverseSorted(arr) {
+export function arrReverseSorted(arr) {
     return [...arr].sort((a, b) => b - a);
 }
 
@@ -106,6 +106,6 @@ function arrReverseSorted(arr) {
  * @param {Array} arr - Исходный массив.
  * @returns {Array} Массив уникальных значений.
  */
-function unique(arr) {
+export function unique(arr) {
     return [...new Set(arr)];
 }
