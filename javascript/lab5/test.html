@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://fedyaevys.ru/javascript/lab5/test.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Document</title>
+</head>
+<body>
+	<div>Пользователи:</div>
+	<ul>
+		<li>Маша</li>
+		<li>Вовочка</li>
+	</ul>
+	<!-- комментарий -->
+	<script>
+        console.log('=== Head ===')
+		const head = document.getElementsByTagName("head")[0].innerHTML;
+        console.log(head);
+        console.log('=== Ul ===')
+        const ul = document.getElementsByTagName("ul")[0].innerHTML;
+        console.log(ul)
+        console.log('=== Li ===')
+        for (const li of document.getElementsByTagName("li")) {
+            console.log(li.innerHTML)
+        }
+	</script>
+
+</body></html>
