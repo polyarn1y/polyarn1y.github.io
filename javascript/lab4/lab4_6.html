@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+</head>
+<body>
+    <script>
+        const obj = {
+        name: 'Vladimir',
+        age: 19,
+        hobbies: [
+            'coding', 'travelling'
+        ]
+        }
+
+        const jsonString = JSON.stringify(obj, null, 2);
+        const obj2 = JSON.parse(jsonString);
+
+        console.log(`${JSON.stringify(obj) === JSON.stringify(obj2) ? 'Объекты равны' : 'Объекты не равны' }`)
+    </script>
+</body>
+</html>
