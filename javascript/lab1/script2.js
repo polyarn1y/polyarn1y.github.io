@@ -1,28 +1,12 @@
-'use strict';
+'use strict'
 
-let num = parseInt(prompt("Введите число:"))
-let str = '';
-const remainder = num % 10;
-const hundredsRemainder = num % 100;
-
-
-if (num <= 0) {
-    str = "Введите корректное значение";
-}
-if (num === 1) {
-    str = "На ветке сидит" + num + "ворона";
-    exit;
-}
-
-switch (true) {
-    case remainder === 1 && hundredsRemainder!== 11:
-        str = "На ветке сидит " + num + " ворон";
-        break;
-    case remainder >= 2 && remainder <= 4 && (hundredsRemainder < 10 || hundredsRemainder >= 20):
-        str = "На ветке сидит " + num + " вороны";
-        break;
-    default:
-        str = "На ветке сидит " + num + " ворон";
-        break;
-}
-alert(str);
+let num = parseInt(prompt("Введите кол-во ворон"))
+let lastOne = num%10
+let lastTwo = num%100
+    if (num => 0) {
+        if (lastOne === 0 || lastOne >= 5 || (lastTwo>=11 && lastTwo<=14)) alert(`${num} ворон`)
+        else if (lastOne===1) alert(`${num} ворона`)
+        else alert(`${num} вороны`)
+    }
+    else alert(`Вы отменили выполнение`)
+    
