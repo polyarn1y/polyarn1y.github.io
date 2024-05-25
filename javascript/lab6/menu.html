@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://fedyaevys.ru/javascript/lab6/menu.html -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Меню</title>
+	<style>
+	    .menu ul {
+	      margin: 0;
+	      list-style: none;
+	      padding-left: 20px;
+	      display: none;
+	    }
+
+	    .menu .title {
+	      font-size: 18px;
+	      cursor: pointer;
+	    }
+
+	    .menu .title::before {
+	      content: '▶';
+	      font-size: 80%;
+	      color: green;
+	      display: inline-block;		
+	      width: 18px;
+
+	    }
+
+	    .menu.open .title::before {
+	      content: '▼';
+	    }
+
+	    .menu.open ul {
+	      display: block;
+	    }
+	</style>
+</head>
+<body cz-shortcut-listen="true">
+	<div class="menu open">
+		<span class="title ">Сладости (нажми меня)!</span>
+	 	<ul>
+	    	<li>Торт</li>
+	    	<li>Пончик</li>
+	    	<li>Пирожное</li>
+	  	</ul>
+	</div>
+
+	<script>
+		const menu = document.querySelector('.menu');
+		menu.addEventListener('click', function() {
+			if (menu.classList.contains('open')) {
+				menu.classList.remove('open');
+			} else {
+				menu.classList.add('open');
+			}
+		});
+	</script>
+
+</body></html>
