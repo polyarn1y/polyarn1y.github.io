@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы, элементы управления</title>
+</head>
+<body>
+    <select onchange="console.log(this.value, this.options[this.selectedIndex].text)">
+        <option value="Rock" selected>Рок</option>
+        <option value="Blues">Блюз</option>
+    </select>
+
+    <script>
+        const option = document.createElement('option');
+        const select = document.querySelector('select');
+        console.log(select.value, select.options[select.selectedIndex].text);
+        option.value = 'Classic';
+        option.text = 'Классика';
+        option.selected = true;
+        select.appendChild(option);
+    </script>
+</body>
+</html>
