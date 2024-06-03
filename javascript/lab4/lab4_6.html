@@ -18,7 +18,7 @@
         const jsonString = JSON.stringify(obj, null, 2);
         const obj2 = JSON.parse(jsonString);
 
-        console.log(`${JSON.stringify(obj) === JSON.stringify(obj2) ? 'Объекты равны' : 'Объекты не равны' }`)
+        console.log(`${obj === obj2 ? 'Объекты равны' : 'Объекты не равны' }`)
     </script>
 </body>
 </html>
